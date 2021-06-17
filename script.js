@@ -180,6 +180,9 @@ console.log("Password: " + password);
 
 return password;
 
+
+};
+
 // Password Copy Function - Not Working
 
 // TO-DO
@@ -192,19 +195,13 @@ var copyPassword = window.confirm("Do You want to copy the password?");
 if (copyPassword){
 
   function copy() {
-    document.getElementById("password").select();
+    var copyText = document.querySelector("#password");
+    copyText.select();
     document.execCommand("copy");
     alert("Your Password is copied to clipboard");
   }
 
 }
-
-
-
-
-};
-
-
 
 
 
