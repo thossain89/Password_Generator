@@ -41,8 +41,7 @@ function writePassword() {
 }
 
 
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
 
 // Function and Loop to generate password
 
@@ -172,7 +171,7 @@ for (var i = 0; i < enterLength; i++) {
   
 }
 
-// Join strings and return complete password 
+// Join choices and return complete password 
 
 var password = passwordBlank.join("");
 
@@ -183,25 +182,10 @@ return password;
 
 };
 
-// Password Copy Function - Not Working
+// Add event listener to generate button
 
-// TO-DO
+generateBtn.addEventListener("click", writePassword);
 
-// 1.Prompt to confirm after the password is generated if user wants to copy it or not
-// 2.Make the copy function work
-
-var copyPassword = window.confirm("Do You want to copy the password?");
-
-if (copyPassword){
-
-  function copy() {
-    var copyText = document.querySelector("#password");
-    copyText.select();
-    document.execCommand("copy");
-    alert("Your Password is copied to clipboard");
-  }
-
-}
 
 
 
